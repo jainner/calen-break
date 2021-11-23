@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+
+:root {
+	--past-color: #e88282;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f2f2f2;
+	font-size: 16px;
+	font-family: poppins, sans-serif, Arial, Helvetica;
+	font-weight: 300;
+	color: black;
+}
+
+h1 {
+	text-align: center;
+	margin: 1em 0;
+}
+
+.calendario {
+	margin: 0 auto;
+	max-width: 500px;
+	background-color: #80dabf;
+	padding: 1em;
+	border-radius: 0.5em;
+	box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.calen_info {
+	display: flex;
+	justify-content: space-around;
+}
+
+.prev_month {
+	color: var(--past-color);
+}
+.next_month {
+	color: var(--past-color);
+}
+
+.calen_weeks {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.calen_day {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+	font-size: 1rem;
+	background-color: #e89b9b;
+	border-right: 1px solid #040303;
+}
+
+.calen_day:last-child {
+	border-right: 0;
+}
