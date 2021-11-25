@@ -31,23 +31,56 @@ h1 {
 	padding: 1em;
 	border-radius: 0.5em;
 	box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .calen_info {
 	display: flex;
 	justify-content: space-around;
 }
-
-.prev_month {
-	color: var(--past-color);
+.calen_month {
+	margin-right: 1em;
 }
+.content-month {
+	display: flex;
+	min-width: 200px;
+	justify-content: center;
+}
+
+.prev_month,
 .next_month {
 	color: var(--past-color);
+	cursor: pointer;
+	padding: 0 0.8em;
+	background-color: rgba(0, 0, 0, 0.042);
+	border-radius: 0.2em;
 }
 
-.calen_weeks {
+.calen_weeks,
+.calendar_dates {
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
+	text-align: center;
+}
+.calendar_dates {
+	gap: 1em 0;
+	margin-top: 0.5em;
+}
+
+.calendar_today {
+	background-color: rgb(220, 238, 238);
+	border-radius: 50%;
+	width: 50%;
+	margin: auto;
+}
+.break {
+	background-color: blue;
+}
+
+.month_before {
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .calen_day {

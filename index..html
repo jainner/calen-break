@@ -6,8 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="/calendario.png" />
 		<title>Deacansos Work</title>
-		<link rel="stylesheet" href="style.css" />
-		<script defer src="/index.js"></script>
+		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
 		<section class="container">
@@ -16,9 +15,10 @@
 				<div class="calen_info">
 					<div class="prev_month" id="prev-month">&#9664;</div>
 
-					<div class="calen_month" id="month"></div>
-
-					<div class="calen_year" id="year"></div>
+					<div class="content-month">
+						<div class="calen_month" id="month"></div>
+						<div class="calen_year" id="year"></div>
+					</div>
 
 					<div class="next_month" id="next-month">&#9654;</div>
 				</div>
@@ -31,8 +31,9 @@
 					<div class="calen_day">Sab</div>
 					<div class="calen_day">Dom</div>
 				</div>
-				<div class="calen_dates" id="dates"></div>
+				<div class="calendar_dates" id="dates"></div>
 			</div>
 		</section>
+		<script src="./index.js"></script>
 	</body>
 </html>
