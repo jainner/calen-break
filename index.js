@@ -14,7 +14,7 @@ let monthNames = [
 ];
 
 const d = new Date();
-let currentDay = d.getDate();
+let currentDay = d.getDay();
 let currentMonth = d.getMonth();
 let currentYear = d.getFullYear();
 
@@ -43,8 +43,10 @@ function writeMonth(month) {
 	for (i = 1; i <= getTotalDay(month); i++) {
 		if (i === currentDay) {
 			dates.innerHTML += `<div class='calendar_today'>${i}</div>`;
+		} else if (i % 2 == 0) {
+			dates.innerHTML += `<div class='break'>${i}</div>`;
 		} else {
-			dates.innerHTML += `<div>${i}</div>`;
+			dates.innerHTML += `<div class='work'>${i}</div>`;
 		}
 	}
 }

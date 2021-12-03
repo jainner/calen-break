@@ -19,6 +19,12 @@ body {
 	color: black;
 }
 
+@media (max-width: 360px) {
+	.container {
+		margin-top: 10rem;
+		margin: 0.5rem;
+	}
+}
 h1 {
 	text-align: center;
 	margin: 1em 0;
@@ -54,8 +60,13 @@ h1 {
 	color: var(--past-color);
 	cursor: pointer;
 	padding: 0 0.8em;
-	background-color: rgba(0, 0, 0, 0.042);
 	border-radius: 0.2em;
+	transition: background-color 0.5s ease;
+}
+
+.prev_month:hover,
+.next_month:hover {
+	background-color: rgba(0, 0, 0, 0.042);
 }
 
 .calen_weeks,
@@ -68,19 +79,25 @@ h1 {
 	gap: 1em 0;
 	margin-top: 0.5em;
 }
+.first_day_work {
+	color: red;
+}
 
 .calendar_today {
-	background-color: rgb(220, 238, 238);
-	border-radius: 50%;
-	width: 50%;
+	color: rgb(250, 9, 9);
+	width: 100%;
 	margin: auto;
+	font-weight: bold;
 }
 .break {
-	background-color: blue;
+	background-color: rgba(205, 219, 76, 0.597);
+}
+.work {
+	background-color: rgba(91, 155, 107, 0.549);
 }
 
 .month_before {
-	background-color: rgba(0, 0, 0, 0.3);
+	opacity: 0.3;
 }
 
 .calen_day {
