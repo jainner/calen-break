@@ -84,10 +84,13 @@ h1 {
 }
 
 .calendar_today {
-	color: rgb(250, 9, 9);
+	color: rgb(245, 241, 241);
 	width: 100%;
 	margin: auto;
-	font-weight: bold;
+	background-color: #0000008c;
+}
+.des {
+	background-color: rgba(123, 83, 196, 0.597);
 }
 .break {
 	background-color: rgba(205, 219, 76, 0.597);
